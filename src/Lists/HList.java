@@ -28,7 +28,7 @@ public class HList<Ts extends TList> {
     if (ls.empty()) {
       return 0;
     } else {
-      HCons ls_ = (HCons) ls;
+      HCons<?, ?> ls_ = (HCons<?, ?>) ls;
       return 1 + length(ls_.tail);
     }
   }
