@@ -11,7 +11,7 @@ public class FuncList {
 
   public static void main(String[] args) {
     var ls_ = cons(1, cons(2, cons(3, null)));
-    int n = (Integer) ((Either.Left) ls_.apply((h, t) -> new Either.Left<>(h))) . value;
+    int n = ((Either.Left<Integer, ?>) ls_.apply((h, t) -> new Either.Left<>(h))) . value;
     System.out.println(n);
   }
 }
