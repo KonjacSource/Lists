@@ -1,4 +1,4 @@
 # Lists
-Useless ways to write list in java.
+Useless ways to write lists in java.
 
 Maybe could help you learn generic programming.
