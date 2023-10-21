@@ -29,7 +29,8 @@ public class Vec<A, Len extends Nat> {
     } else if (fin instanceof FS){ // fin instanceof FS
       return index(((Cons<A, Len>) vect).tail(), ((FS<Len>) fin).getPre());
     } else {
-      throw new ClassCastException("! THIS SHOULD NOT HAPPENED , WHAT HAVE YOU DONE !");
+      // Unreachable. But java can't see.
+      throw new ClassCastException("???");
     }
   }
 
